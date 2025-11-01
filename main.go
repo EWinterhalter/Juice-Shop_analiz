@@ -247,13 +247,10 @@ func prettyPrint(v interface{}) {
 }
 
 func usage() {
-	fmt.Println("zapctl - small demo CLI")
-	fmt.Println("Usage:")
-	fmt.Println("  zapctl add -name NAME -url URL     # add asset")
-	fmt.Println("  zapctl remove -name NAME           # remove asset (and clear alerts in ZAP)")
-	fmt.Println("  zapctl list                        # list assets")
-	fmt.Println("  zapctl scan -name NAME             # start active scan on asset (waits until 100%)")
-	fmt.Println("  zapctl alerts -name NAME           # fetch alerts for asset (grouped by vulnerability)")
+	fmt.Println("  add -name NAME -url URL    ")
+	fmt.Println("  remove -name NAME          ")
+	fmt.Println("  scan -name NAME            ")
+	fmt.Println("  alerts -name NAME          ")
 }
 
 func main() {
